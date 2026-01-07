@@ -36,9 +36,8 @@ dist/
 # -------------------------
 # Docker
 # -------------------------
-# ignore docker volumes (so local db & tmp aren't committed)
 tmp/
-/db/
+src/db/
 
 # -------------------------
 # OS / IDE
