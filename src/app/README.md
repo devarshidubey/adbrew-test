@@ -1,7 +1,7 @@
 
 # Adbrew Test
 
-The setup is pretty much the same as mentioned in the assignment repo 
+The setup is pretty much the same as mentioned in the assignment repo. **Additionally the Open API 3.1 Spec is also present in the backend directory:** `src/rest/OAS.yaml`
 
 
 # Setup
