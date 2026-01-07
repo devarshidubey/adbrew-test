@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: Adbrew Test
+  version: 1.0.0
+  description: ''
+servers:
+  - url: '{{base_url}}'
+paths:
+  /todos/create:
+    post:
+      summary: Create Todo
+      responses:
+        '201':
+          description: Create Todo
+          headers:
+            Date:
+              schema:
+                type: string
+              example: Wed, 07 Jan 2026 02:21:59 GMT
+            Server:
+              schema:
+                type: string
+              example: WSGIServer/0.2 CPython/3.8.20
+            Allow:
+              schema:
+                type: string
+              example: POST, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+              example: DENY
+            Content-Length:
+              schema:
+                type: integer
+              example: '135'
+            Vary:
+              schema:
+                type: string
+              example: Origin
+            X-Content-Type-Options:
+              schema:
+                type: string
+              example: nosniff
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+            example:
+              title: byebye
+  /todos:
+    get:
+      summary: List Todos
+      responses:
+        '200':
+          description: List Todos
+          headers:
+            Date:
+              schema:
+                type: string
+              example: Wed, 07 Jan 2026 02:15:24 GMT
+            Server:
+              schema:
+                type: string
+              example: WSGIServer/0.2 CPython/3.8.20
+            Allow:
+              schema:
+                type: string
+              example: GET, HEAD, OPTIONS
+            X-Frame-Options:
+              schema:
+                type: string
+              example: DENY
+            Content-Length:
+              schema:
+                type: integer
+              example: '948'
+            Vary:
+              schema:
+                type: string
+              example: Origin
+            X-Content-Type-Options:
+              schema:
+                type: string
+              example: nosniff
