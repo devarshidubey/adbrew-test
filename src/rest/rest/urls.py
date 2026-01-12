@@ -16,7 +16,7 @@ Including another URLconf
 from django.urls import path, include
 from core.middlewares.exception_handler import handler404, handler500
 
-handler400 = handler404
+handler404 = handler404
 handler500 = handler500
 
 urlpatterns = [
