@@ -19,11 +19,6 @@ else:
 
 
 class MongoConnection:
-    """
-    Singleton MongoDB connection manager with connection pooling.
-    Use get_db() to access the database object.
-    """
-
     _client: MongoClient = None
     _db = None
 
